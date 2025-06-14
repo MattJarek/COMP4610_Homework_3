@@ -1,0 +1,109 @@
+body{
+    background-color: #FFFDF2;
+}
+
+/* Make the table scrollable and make the scroll lock on table rows / columns, got help from dcode on youtube, https://www.youtube.com/watch?v=uMtyxRSqxIk*/
+.scrollable-table{
+    height: 77vh;
+    overflow-y: auto;
+    overflow-x: auto;
+    margin-top: 50px;
+    scroll-snap-type:both mandatory;
+    width: 100%;
+}
+
+.table tr{
+    scroll-snap-align: start;
+}
+
+.table{
+    table-layout: fixed;
+}
+
+.table th{
+    color: #FFFDF2;
+    background-color: #970747;
+    border-color: #FFC0CB;
+    border-style: solid;
+    border-right-width: 2px;
+    padding: 6px, 8px;
+    position: sticky;
+    top: 0px;
+    left: 0px;
+    z-index: 0;
+    width: 75px;
+    scroll-snap-align: start;
+}
+
+.table th#blank{
+    color: #FFC0CB;
+    background-color: #FFC0CB;
+    border-color: #FFC0CB;
+    border-style: solid;
+    border-width: 0px;
+    padding: 6px, 8px;
+    z-index: 1;
+    width: 75px;
+}
+
+.table td{
+    color: #970747;
+    background-color: #FFFDF2;
+    border-color: #FFC0CB;
+    border-style: solid;
+    border-width: 2px;
+    padding: 6px, 8px;
+    scroll-snap-align: start;
+}
+
+div#header{
+    color: #FFC0CB;
+    background-color: #970747;
+}
+
+input {
+    color: #970747;
+    background-color: #FFC0CB;
+    border-color: #970747;
+}
+
+input:active{
+    color: #FFC0CB;
+    background-color: #970747;
+    border-color: #970747;
+}
+
+input.num {
+    max-width: 50px;
+    color: #FFFDF2;
+    background-color: #FFC0CB;
+    border-color: #970747;
+}
+
+#error{
+    color: #970747;
+    background-color: #FFC0CB;
+    border-color: #970747;
+    border-width: 5px;
+    border-style: double;
+    margin: 50px;
+    padding: 0px;
+}
+
+h3{
+    color: #FFFDF2;
+    background-color: #970747;
+}
+
+.col {
+    background-color: #FFFDF2;
+    color: #970747;
+    overflow-y: scroll;
+}
+
+ul {
+    list-style-type: square;
+    list-style-position: inside;
+    text-align: left;
+    padding-left: 46%;
+}
